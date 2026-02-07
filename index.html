@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wedding Invitation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(#4b0000, #120000);
+      color: gold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+    }
+    .box {
+      border: 3px solid gold;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(0,0,0,0.6);
+    }
+    button {
+      margin: 15px;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      background: gold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>॥ श्री गणेशाय नमः ॥</h2>
+  <p>Choose Language / भाषा चुनें</p>
+  <button onclick="go('en')">English</button>
+  <button onclick="go('hi')">हिन्दी</button>
+</div>
+
+<script>
+function go(lang) {
+  const params = new URLSearchParams(window.location.search);
+  const guest = params.get("guest") || "Esteemed Guest";
+  window.location.href = `invite.html?lang=${lang}&guest=${guest}`;
+}
+</script>
+
+</body>
+</html>
