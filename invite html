@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kirti & Aditya Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="music/divine-instrumental.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p id="guestName"></p>
+    <p class="ganesh">॥ श्री गणेशाय नमः ॥</p>
+    <h1>Kirti Sharma</h1>
+    <span class="amp">&</span>
+    <h1>Aditya Mittal</h1>
+    <p class="date">20 & 21 April 2026</p>
+    <div id="countdown"></div>
+  </div>
+</section>
+
+<section class="divine">
+  <img src="images/shiv.png">
+  <img src="images/krishna.png">
+</section>
+
+<section class="family">
+  <img src="images/bride.jpg" class="photo bride">
+  <div id="bridePoem"></div>
+</section>
+
+<section class="family alt">
+  <img src="images/groom.jpg" class="photo groom">
+  <div id="groomPoem"></div>
+</section>
+
+<section class="events" id="events"></section>
+
+<section class="venue">
+  <h2>Wedding Venue</h2>
+  <h3>Classic Sapphire Ananta, Bundi</h3>
+  <img src="images/venue.jpg">
+  <iframe src="https://www.google.com/maps?q=Classic+Sapphire+Ananta+Bundi&output=embed"></iframe>
+</section>
+
+<section class="rsvp">
+  <h2>RSVP</h2>
+  <form id="rsvp-form">
+    <input type="text" placeholder="Full Name" required>
+    <input type="tel" placeholder="Mobile Number" required>
+    <select required>
+      <option value="">Your Presence</option>
+      <option>Will Attend with Blessings</option>
+      <option>Unable to Attend</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="rsvp-msg"></p>
+</section>
+
+<footer>
+  <p>With warm regards from both families</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
